@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ShopEase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom right, #f7f8fc, #e3e7f0);
+            color: #333;
+        }
+
+        header {
+            background-color: #1e293b;
+            padding: 1rem 2rem;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3rem 5%;
+            gap: 2rem;
+            height: 100vh;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .hero-image {
+            flex-shrink: 0;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .features {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 3rem 5%;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .feature {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            height: 500px;
+        }
+
+        .feature img {
+            height: 50%;
+            width: 300px;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #1e293b;
+            padding: 1rem 2rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="card bg-light p-2" style="width: 180px; height: 55px;">
+            <img src="../assets/logo.png" alt="logo" style="width: 100%; height: auto; margin-top: -62px;"/>
+        </div>
+        <div class="auth-buttons">
+            <a class="btn btn-light fw-bold" href="../login/index.html">Login</a>
+            <a class="btn btn-light fw-bold" href="../signup/index.html">Sign Up</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Welcome to ShopEase</h2>
+            <p>Your one-stop destination for ordering products with ease. Seamless browsing, quick orders, and fast
+                delivery to your doorstep.</p>
+            <a class="btn btn-secondary" href="/home">Shop !</a>
+        </div>
+        <div class="hero-image">
+            <img src="../assets/logo.png"
+                alt="e-commerce illustration">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <img src="../assets/image1.png"
+                alt="ordering online">
+            <h3>Easy Ordering</h3>
+            <p>Order your favorite products anytime, anywhere with just a few clicks.</p>
+        </div>
+        <div class="feature">
+            <img src="../assets/image2.png"
+                alt="delivery to home">
+            <h3>Fast Delivery</h3>
+            <p>Our agents ensure timely and safe delivery directly to your home.</p>
+        </div>
+        <div class="feature">
+            <img src="../assets/image3.png"
+                alt="customer experience">
+            <h3>Customer Satisfaction</h3>
+            <p>Trusted by thousands of happy customers with top-rated service.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 ShopEase. All rights reserved.
+    </footer>
+</body>
+
+</html>
